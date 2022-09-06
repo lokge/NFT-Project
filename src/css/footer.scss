@@ -1,0 +1,110 @@
+.footer {
+  padding: 80px 0 32px;
+  background-color: $black;
+
+  &__top {
+    display: flex;
+
+    &-logo {
+      position: relative;
+      max-width: 256px;
+      margin-right: 128px;
+    }
+
+    &-nav {
+      display: flex;
+      position: relative;
+
+      &-block {
+        &:nth-of-type(2) {
+          margin: 0 124px 0 89px;
+          max-width: 68px;
+        }
+      }
+
+      &-title {
+        @include text($pop, normal, 500, 16px, 0, $white);
+        margin-bottom: 40px;
+      }
+
+      &-links {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        max-width: 103px;
+      }
+
+      &-link {
+        @include text($DM, normal, 700, 14px, 0, $gray);
+      }
+
+      &-subtitle {
+        @include text($pop, normal, 400, 14px, 0, #E6E8EC);
+        margin-bottom: 24px;
+      }
+
+      &-form {
+        position: relative;
+      }
+
+      &-input {
+        padding: 14px 16px;
+        background-color: $black;
+        border: 2px solid #353945;
+        border-radius: 90px;
+        width: 352px;
+      }
+
+      &-btn {
+        width: 32px;
+        height: 32px;
+        background-color: #3772FF;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        right: 33px;
+        bottom: 33px
+      }
+    }
+  }
+
+  &__title {
+    @include text($pop, normal, 600, 24px, 0, #F4F5F6);
+    letter-spacing: -0.02em;
+    margin-left: 41px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -22px;
+    left: -60px;
+  }
+
+  &__subtitle {
+    letter-spacing: -0.01em;
+    @include text($pop, normal, 400, 24px, 0, #E6E8EC);
+    margin-top: 32px;
+  }
+  &__line{
+    height: 1px;
+    width: 100%;
+    background-color: #353945;
+    margin: 48px 0 32px;
+  }
+  &__bot{
+    display: flex;
+    justify-content: space-between;
+    &-copyright{
+      @include text($pop, normal, 400, 12px, 0, $gray);
+    }
+    &-label{
+      @include text($pop, normal, 400, 12px, 0, #E6E8EC);
+    }
+    &-btn{
+      @include text($pop, normal, 600, 12px, 0, #3772FF);
+      border-style: none;
+      background-color: $black;
+      margin-left: 16px;
+    }
+  }
+}

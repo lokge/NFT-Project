@@ -1,0 +1,106 @@
+.bid{
+  padding: 136px 0 148px;
+  &__title{
+    @include text($DM, normal, 700, 40px, 0, $white);
+    letter-spacing: -0.01em;
+  }
+  &__start{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  &__block{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 32px;
+    row-gap: 52px;
+    &-img{
+      border-radius: 10px;
+      &-second{
+        width: 256px;
+        height: 303px;
+        background-color: $white;
+        margin-bottom: 4.25px;
+      }
+    }
+    &-subtitle{
+      @include text($pop, normal, 500, 16px, 0, $white);
+      margin: 21px 0 13px;
+    }
+    &-avatar{
+      border-radius: 50%;
+      border: 2px solid #23262F;
+      background-color: #9757D7;
+      &:nth-of-type(2){
+        background-color: #EF466F;
+        margin-left: -14px;
+      }
+      &:nth-of-type(3){
+        margin-left: -14px;
+        background-color: #45B26B;
+      }
+    }
+    &-box{
+      &-end{
+        display: flex;
+        align-items: center;
+        &-content{
+          display: flex;
+        }
+      }
+      &-content{
+        display: flex;
+      }
+    }
+    &-price{
+      @include text($pop, normal, 700, 12px, 0, #45B36B);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 2px solid #45B26B;
+      margin: 20px 0 12px 30px;
+    }
+    &-stock{
+      @include text($pop, normal, 500, 14px, 0, #E6E8EC);
+      margin-left: 32px;
+    }
+    &-line{
+      height: 1px;
+      width: 100%;
+      background-color: #353945;
+      margin: 12px 0;
+    }
+    &-highest{
+      @include text($pop, normal, 400, 12px, 0, $gray);
+      margin: 0 4px;
+    }
+    &-eth{
+      @include text($pop, normal, 600, 12px, 0, $white);
+    }
+    &-newBid{
+      @include text($pop, normal, 400, 12px, 0, $gray);
+      margin-left: 40px;
+    }
+  }
+  &__swipers{
+    display: flex;
+    column-gap: 5px;
+    &-swipe{
+      transition: 0.4s;
+      border-radius: 50%;
+      border: 2px solid $black;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid $gray;
+      }
+    }
+  }
+}

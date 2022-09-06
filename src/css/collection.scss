@@ -1,0 +1,49 @@
+.collection{
+  padding: 128px 0 130px;
+  background-color: #23262F;
+  &__title{
+    @include text($DM, normal, 700, 40px, 0, $white);
+    margin-bottom: 80px;
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    justify-content: center;
+    &-box{
+      &-mainImg{
+        border-radius: 10px;
+        margin-bottom: 2px;
+      }
+      &-imgs{
+        display: flex;
+        column-gap: 8px;
+      }
+      &-img{
+        border-radius: 5px;
+      }
+      &-subtitle{
+        @include text($pop, normal, 600, 24px, 0, $white);
+        margin: 16px 0 8px;
+      }
+      &-info{
+        display: flex;
+        align-items: center;
+      }
+      &-avatar{
+        border-radius: 50%;
+        background-color: $white;
+      }
+      &-text{
+        @include text($pop, normal, 400, 14px, 0, #E6E8EC);
+        margin: 0 142px 0 12px;
+      }
+      &-item{
+        @include text($pop, normal, 700, 12px, 0, $white);
+        padding: 3px 8px 3px;
+        border: 2px solid #E6E8EC;
+        border-radius: 5px;
+      }
+    }
+  }
+}

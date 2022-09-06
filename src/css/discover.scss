@@ -1,0 +1,101 @@
+.discover{
+  padding: 128px 0;
+  &__title{
+    @include text($DM, normal, 700, 40px, 0, $white);
+    margin-bottom: 80px;
+  }
+  &__head{
+    &-nav{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-select{
+      background-color: $black;
+      padding: 12px 16px;
+      border: 2px solid #353945;
+      border-radius: 5px;
+      color: $white;
+      width: 180px;
+      &-one{
+        width: 256px;
+        margin-top: 12px;
+      }
+    }
+    &-option{
+      background-color: #23262F;
+      border: 2px solid #353945;
+    }
+    &-links{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 36px;
+    }
+    &-link{
+      @include text($DM, normal, 700, 14px, 0, $gray);
+      padding: 6px 12px;
+      transition: 0.1s;
+      &:hover{
+        color: $white;
+        background-color: #353945;
+        border-radius: 100px;
+        transition: 0.1s;
+      }
+    }
+    &-btn{
+      @include text($DM, normal, 700, 16px, 0, $white);
+      padding: 16px 27px 16px 24px;
+      background-color: #3772FF;
+      border-radius: 90px;
+      &-icon{
+        margin-left: 15px;
+      }
+    }
+  }
+  &__line{
+    height: 1px;
+    background-color: #353945;
+    margin: 32px 0;
+  }
+  &__filter{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+    &-label{
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      @include text($pop, normal, 700, 12px, 0, #B1B5C4);
+    }
+  }
+  &__button{
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: $black;
+    border: 2px solid $gray;
+    border-radius: 90px;
+    @include text($DM, normal, 700, 14px, 0, $white);
+    transition: 0.2s;
+    &-icon{
+      margin-left: 13px;
+      margin-top: 5px;
+    }
+    &:hover{
+      transition: 0.2s;
+      background-color: #3772FF;
+    }
+  }
+}
+
+
+
+
