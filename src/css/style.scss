@@ -49,7 +49,8 @@ main{
 @import "discover";
 @import "crypto";
 @import "footer";
-
+@import "upload";
+@import "uploadItem";
 
 input[type=range].styled-slider {
   height: 16px;
