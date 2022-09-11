@@ -10,7 +10,7 @@
   &__title {
     @include text($DM, normal, 700, 40px, 0, #FCFCFD);
     letter-spacing: -0.01em;
-    margin: 8px 0 25px;
+    margin: 8px 0 50px;
   }
   &__btn{
     @include text($DM, normal, 700, 16px, 0, #FCFCFD);
@@ -21,7 +21,8 @@
     transition: 0.3s;
     &:hover{
       transition: 0.3s;
-      background-color: $gray;
+      background-color: #3772FF;
+      border: 2px solid #3772FF;
     }
   }
 }

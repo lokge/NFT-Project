@@ -1,0 +1,166 @@
+.profile-edit {
+  &__line{
+    margin: 0;
+  }
+  &__main {
+    &-content {
+      display: flex;
+      padding: 80px 0 136px;
+      justify-content: center;
+    }
+
+    &-block {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      max-width: 736px;
+
+      &-title {
+        @include text($DM, normal, 700, 48px, 0, $white);
+      }
+
+      &-desc {
+        @include text($pop, normal, 400, 14px, 0, $gray);
+
+        &-link {
+          @include text($pop, normal, 500, 14px, 0, $white);
+        }
+      }
+
+      &-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        align-items: flex-start;
+
+        &:first-of-type {
+          max-width: 352px;
+        }
+
+        &-img {
+          border-radius: 50%;
+          background-color: #45B26B;
+          margin-right: 32px;
+        }
+
+        &-cont {
+          max-width: 192px;
+        }
+
+        &-name {
+          @include text($pop, normal, 500, 16px, 0, $white);
+          display: inline;
+        }
+
+        &-text {
+          @include text($pop, normal, 400, 14px, 0, $gray);
+          margin: 8px 0 16px;
+        }
+
+        &-label {
+          border: 2px solid #353945;
+          border-radius: 90px;
+          padding: 12px 16px;
+          cursor: pointer;
+        }
+
+        &-input {
+          display: none;
+        }
+
+        &-upload {
+          @include text($DM, normal, 700, 16px, 0, $white);
+        }
+      }
+
+      &-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        max-width: 352px;
+        margin-top: 64px;
+        &-title {
+          @include text($pop, normal, 500, 16px, 0, $white);
+        }
+        &-label{
+          @include text($pop, normal, 700, 12px, 0, #353945);
+          text-transform: uppercase;
+          &:nth-of-type(5){
+            position: relative;
+          }
+        }
+        &-input{
+          margin-top: 12px;
+          padding: 12px 16px;
+          width: 352px;
+          background-color: $black;
+          border: 2px solid #353945;
+          border-radius: 12px;
+          color: $gray;
+          @include text($pop, normal, 500, 14px, 0, $white);
+          &-area{
+            padding: 12px 16px;
+            width: 352px;
+            background-color: $black;
+            border: 2px solid #353945;
+            border-radius: 12px;
+            @include text($pop, normal, 500, 14px, 0, $white);
+            resize: none;
+            height: 96px;
+          }
+        }
+        &-btn{
+          position: absolute;
+          right: 5px;
+          bottom: 6px;
+          padding: 8px;
+          background-color: $black;
+          border: 2px solid #353945;
+          border-radius: 90px;
+          @include text($DM, normal, 700, 14px, 0, $white);
+          transition: 0.2s;
+          &:hover{
+            transition: 0.2s;
+            background-color: #3772FF;
+            border: 2px solid #3772FF;
+          }
+        }
+        &-add{
+          display: flex;
+          align-items: center;
+          column-gap: 13px;
+          padding: 12px 16px;
+          background-color: $black;
+          border: 2px solid #353945;
+          border-radius: 90px;
+          @include text($DM, normal, 700, 14px, 0, $gray);
+        }
+        &-desc{
+          @include text($pop, normal, 400, 14px, 24px, $gray);
+        }
+        &-btns{
+          display: flex;
+          align-items: center;
+        }
+        &-button{
+          background-color: #3772FF;
+          padding: 16px 24px;
+          border-radius: 90px;
+          margin-right: 32px;
+          border: none;
+          @include text($DM, normal, 700, 16px, 0, $white);
+        }
+        &-reset{
+          display: flex;
+          align-items: center;
+          border: none;
+          background-color: $black;
+          @include text($pop, normal, 400, 14px, 0, $gray);
+          &-icon{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

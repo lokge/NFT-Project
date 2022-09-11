@@ -1,6 +1,9 @@
 .sellers{
   padding: 128px 0;
   background-color: #23262F;
+  &__cont{
+    position: relative;
+  }
   &__block{
     display: flex;
     justify-content: space-between;
@@ -36,6 +39,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 32px;
+    height: 280px;
     &-box{
       position: relative;
       padding: 24px;
@@ -143,6 +147,22 @@
           border: 2px solid $gray;
         }
       }
+    }
+  }
+  &__swipe{
+    &-next{
+      position: absolute;
+      right: -35px;
+      top: 68%;
+      transform: translateY(-68%);
+      border: 2px solid #23262F;
+    }
+    &-prev{
+      position: absolute;
+      left: -35px;
+      top: 68%;
+      transform: translateY(-68%);
+      border: 2px solid #23262F;
     }
   }
 }

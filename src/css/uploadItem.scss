@@ -1,36 +1,51 @@
 .uploadItem {
   padding: 128px 0;
   background-color: $black;
-  &__home{
+
+  &__home {
     display: flex;
     column-gap: 128px;
   }
+
   &__head {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+
   &__title {
     @include text($DM, norma, 700, 48px, 0, $white);
     width: 469px;
   }
+
   &__link {
     padding: 12px 16px;
     border: 2px solid #353945;
     border-radius: 90px;
     @include text($DM, normal, 700, 14px, 0, $white);
+    transition: 0.2s;
+    &:hover{
+      transition: 0.2s;
+      background-color: #3772FF;
+      border: 2px solid #3772FF;
+    }
   }
+
   &__aside {
     padding: 48px 48px 50px;
     border: 2px solid #353945;
     border-radius: 16px;
     width: 352px;
-    &-price{
+    height: 650px;
+
+    &-price {
       padding: 2px 6px;
     }
-    &-stock{
+
+    &-stock {
       margin-left: 31px;
     }
+
     &-title {
       @include text($pop, normal, 600, 24px, 0, $white);
       margin-bottom: 24px;
@@ -50,22 +65,27 @@
       border: none;
     }
   }
-  &__newBid{
+
+  &__newBid {
     margin-left: 35px;
   }
+
   &__box {
     max-width: 352px;
   }
-  &__mainInfo{
-    &-upload{
-      &-title{
+
+  &__mainInfo {
+    &-upload {
+      &-title {
         @include text($pop, normal, 500, 16px, 0, $white);
         margin: 40px 0 4px;
       }
-      &-drag{
+
+      &-drag {
         @include text($pop, normal, 400, 12px, 0, $gray);
       }
-      &-label{
+
+      &-label {
         margin: 16px 0 40px;
         position: relative;
         display: flex;
@@ -78,7 +98,8 @@
         background-color: #23262F;
         cursor: pointer;
       }
-      &-label input[type=file]{
+
+      &-label input[type=file] {
         position: absolute;
         z-index: -1;
         opacity: 0;
@@ -86,13 +107,175 @@
         width: 0;
         height: 0;
       }
-      &-text{
+
+      &-text {
         margin-top: 10px;
         @include text($pop, normal, 400, 12px, 0, $gray);
       }
-      &-subtitle{
+
+      &-subtitle {
         @include text($pop, normal, 500, 16px, 0, $white);
       }
     }
+
+    &-items {
+      display: flex;
+      margin-top: 32px;
+      flex-direction: column;
+      border-bottom: 2px solid #353945;
+      &-label {
+        @include text($pop, normal, 700, 12px, 0, #B1B5C4);
+        text-transform: uppercase;
+      }
+      &-input{
+        width: 100%;
+        color: $white;
+        padding: 12px 16px;
+        border-radius: 12px;
+        background-color: $black;
+        border: 2px solid #353945;
+        margin: 12px 0 32px;
+      }
+      &-block {
+        display: flex;
+        column-gap: 20px;
+        &-label {
+          @include text($pop, normal, 700, 12px, 0, #B1B5C4);
+          text-transform: uppercase;
+        }
+        &-select{
+          width: 100%;
+          color: $white;
+          margin-top: 12px;
+          padding: 12px 16px;
+          border-radius: 12px;
+          background-color: $black;
+          border: 2px solid #353945;
+        }
+      }
+    }
   }
+
+  &__tumblers{
+    padding: 40px 0;
+    &-block{
+      display: flex;
+      justify-content: space-between;
+      &-text{
+        @include text($pop, normal, 500, 16px, 0, $white);
+      }
+      &-desc{
+        @include text($pop, normal, 400, 12px, 0, $gray);
+        margin: 4px 0 32px;
+      }
+    }
+    &-conts{
+      display: flex;
+      gap: 8px;
+    }
+    &-cont{
+      padding: 24px;
+      width: 160px;
+      height: 124px;
+      background-color: #23262F;
+      border-radius: 16px;
+      &-upload{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $white;
+        margin-bottom: 12px;
+        &-second{
+          background-color: #45B26B;
+        }
+        &-third{
+          background-color: #EF466F;
+        }
+        &-last{
+          background-color: #9757D7;
+        }
+      }
+      &-text{
+        @include text($DM, normal, 700, 14px, 0, $white);
+      }
+    }
+  }
+
+  &__foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-link{
+      display: flex;
+      column-gap: 15px;
+      align-items: center;
+      border-radius: 90px;
+      background-color: #3772FF;
+      padding: 16px 24px 16px 27.33px;
+      @include text($DM, normal, 700, 16px, 0, $white);
+    }
+    &-right{
+      display: flex;
+      column-gap: 13px;
+      align-items: center;
+    }
+    &-icon{
+      padding-top: 6px;
+    }
+    &-text{
+      @include text($DM, normal, 700, 16px, 0, $white);
+    }
+  }
+}
+
+
+//input
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #353945;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 0;
+  bottom: 0;
+  background-color: $white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #3772FF
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #3772FF;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }

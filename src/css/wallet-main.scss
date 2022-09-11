@@ -1,0 +1,96 @@
+.wallet{
+  &-main{
+    background-color: $black;
+    &__connect{
+      padding: 80px 0 136px;
+      &-head{
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+      }
+      &-title{
+        @include text($DM, normal, 700, 48px, 0, $white);
+      }
+      &-block{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding-top: 80px;
+        border-top: 2px solid #353945;
+        justify-content: space-between;
+      }
+      &-box{
+        &-content{
+          display: flex;
+          align-items: center;
+          column-gap: 32px;
+          padding: 32px;
+        }
+        &-icon{
+          width: 64px;
+          height: 64px;
+          display: flex;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          background-color: #9757D7;
+          &{
+            &-two{
+              background-color: #3772FF;
+              &-qr{
+                background-color: $black;
+                border: 3px solid #3772FF;
+                border-radius: 50%;
+              }
+            }
+            &-three{
+              background-color: #45B36B;
+            }
+            &-fourth{
+              background-color: #EF466F;
+            }
+          }
+        }
+        &-desc{
+          @include text($pop, normal, 600, 24px, 0, $white);
+        }
+      }
+    }
+  }
+  &-scan{
+    &__qr{
+      &-title{
+        @include text($DM, normal, 700, 40px, 0, $white);
+      }
+      &-desc{
+        @include text($pop, normal, 400, 12px, 0, $gray);
+      }
+      &-scan{
+        padding: 83px;
+        background-color: #23262F;
+        border-radius: 16px;
+        margin: 24px 0;
+      }
+      &-cont{
+        padding: 82.33px 82.67px;
+        background-color: $black;
+        box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
+        border-radius: 12px;
+      }
+      &-btn{
+        color: $white;
+        padding: 16px 24px;
+        border-radius: 90px;
+        background-color: $black;
+        border: 2px solid #353945;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+          transition: 0.2s;
+          background-color: #3772FF;
+          border: 2px solid #3772FF;
+        }
+      }
+    }
+  }
+}

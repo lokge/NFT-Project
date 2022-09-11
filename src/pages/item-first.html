@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Upload item</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Item</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
 <header class="header">
     <div class="container">
         <nav class="header__nav">
@@ -50,238 +51,97 @@
         </nav>
     </div>
 </header>
-<main class="uploadItem__main">
-    <section class="uploadItem">
+<main class="item">
+    <section class="item-first">
         <div class="container">
-            <div class="uploadItem__home">
-                <div class="uploadItem__mainInfo">
-                    <div class="uploadItem__head">
-                        <h1 class="uploadItem__title">Create single collectible</h1>
-                        <a href="../pages/upload-multi.html" class="uploadItem__link">Switch to Multiple</a>
-                    </div>
-                    <div class="uploadItem__mainInfo-upload">
-                        <h3 class="uploadItem__mainInfo-upload-title">Upload file</h3>
-                        <p class="uploadItem__mainInfo-upload-drag">Drag or choose your file to upload</p>
-                        <form action="" class="uploadItem__mainInfo-upload-form">
-                            <label class="uploadItem__mainInfo-upload-label">
-                                <span class="uploadItem__mainInfo-upload-icon"><svg
-                                        width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd"
-      d="M3 5C3 2.79086 4.79086 1 7 1H15.3431C16.404 1 17.4214 1.42143 18.1716 2.17157L19.8284 3.82843C20.5786 4.57857 21 5.59599 21 6.65685V19C21 21.2091 19.2091 23 17 23H7C4.79086 23 3 21.2091 3 19V5ZM19 8V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H14V5C14 6.65685 15.3431 8 17 8H19ZM18.8891 6C18.7909 5.7176 18.6296 5.45808 18.4142 5.24264L16.7574 3.58579C16.5419 3.37035 16.2824 3.20914 16 3.11094V5C16 5.55228 16.4477 6 17 6H18.8891Z"
-      fill="#777E91"/>
-<path d="M11.6172 9.07588C11.4993 9.12468 11.3888 9.19702 11.2929 9.29289L8.29289 12.2929C7.90237 12.6834 7.90237 13.3166 8.29289 13.7071C8.68342 14.0976 9.31658 14.0976 9.70711 13.7071L11 12.4142V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V12.4142L14.2929 13.7071C14.6834 14.0976 15.3166 14.0976 15.7071 13.7071C16.0976 13.3166 16.0976 12.6834 15.7071 12.2929L12.7071 9.29289C12.4125 8.99825 11.9797 8.92591 11.6172 9.07588Z"
-      fill="#777E91"/>
-</svg>
-</span>
-                                <input name="file" class="uploadItem__mainInfo-upload-input" type="file">
-                                <span class="uploadItem__mainInfo-upload-text">PNG, GIF, WEBP, MP4 or MP3. Max 1Gb.</span>
-                            </label>
-                        </form>
-                        <p class="uploadItem__mainInfo-upload-subtitle">Item Details</p>
-                    </div>
-                    <div class="uploadItem__mainInfo-items">
-                        <form class="uploadItem__mainInfo-items-form">
-                            <label class="uploadItem__mainInfo-items-label">
-                                Item name
-                                <input type="text" class="uploadItem__mainInfo-items-input"
-                                       placeholder="e. g. ''Redeemable Bitcoin Card with logo''">
-                            </label>
-                            <label class="uploadItem__mainInfo-items-label">
-                                Description
-                                <input type="text" class="uploadItem__mainInfo-items-input"
-                                       placeholder="e. g. “After purchasing you will able to recived the logo...”">
-                            </label>
-                            <div class="uploadItem__mainInfo-items-block">
-                                <label class="uploadItem__mainInfo-items-block-label">
-                                    Royalties
-                                    <select name="" id="" class="uploadItem__mainInfo-items-block-select">
-                                        <option value="">10%</option>
-                                        <option value="">30%</option>
-                                        <option value="">50%</option>
-                                        <option value="">60%</option>
-                                        <option value="">70%</option>
-                                        <option value="">80%</option>
-                                        <option value="">90%</option>
-                                        <option value="">100%</option>
-                                    </select>
-                                </label>
-                                <label class="uploadItem__mainInfo-items-block-label">
-                                    Size
-                                    <input type="text" class="uploadItem__mainInfo-items-input"
-                                           placeholder="e. g. Size">
-                                </label>
-                                <label class="uploadItem__mainInfo-items-block-label">
-                                    Propertie
-                                    <input type="text" class="uploadItem__mainInfo-items-input"
-                                           placeholder="e. g. Propertie">
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="uploadItem__tumblers">
-                        <div class="uploadItem__tumblers-block">
-                            <div class="uploadItem__tumblers-block-info">
-                                <p class="uploadItem__tumblers-block-text">Put on sale</p>
-                                <p class="uploadItem__tumblers-block-desc">You’ll receive bids on this item</p>
-                            </div>
-                            <div class="uploadItem__tumblers-block-switcher">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
+            <div class="item-first__block">
+                <div class="item-first__block-box">
+                    <div class="item-first__block-box-imgCont">
+                        <div class="item-first__block-box-imgInfo">
+                            <p class="item-first__block-box-imgInfo-text">Art</p>
+                            <p class="item-first__block-box-imgInfo-text">unlockable</p>
                         </div>
-                        <div class="uploadItem__tumblers-block">
-                            <div class="uploadItem__tumblers-block-info">
-                                <p class="uploadItem__tumblers-block-text">Instant sale price</p>
-                                <p class="uploadItem__tumblers-block-desc">Enter the price for which the item will be instantly sold</p>
+                        <img src="../images/item/item1.png" alt="Item Image" class="item-first__block-box-img">
+                        <div class="item-first__block-box-likes">
+                            <button class="item-first__block-box-like item-first__block-box-like-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99858 10.0399C9.02798 10.5914 8.60474 11.0623 8.05324 11.0917C7.30055 11.1318 6.7044 11.1809 6.23854 11.23C5.61292 11.296 5.23278 11.6803 5.16959 12.2331C5.07886 13.0267 5 14.2278 5 16C5 17.7723 5.07886 18.9733 5.16959 19.7669C5.23289 20.3207 5.61207 20.7039 6.23675 20.7698C7.33078 20.8853 9.13925 21 12 21C14.8608 21 16.6692 20.8853 17.7632 20.7698C18.3879 20.7039 18.7671 20.3207 18.8304 19.7669C18.9211 18.9733 19 17.7723 19 16C19 14.2278 18.9211 13.0267 18.8304 12.2331C18.7672 11.6803 18.3871 11.296 17.7615 11.23C17.2956 11.1809 16.6995 11.1318 15.9468 11.0917C15.3953 11.0623 14.972 10.5914 15.0014 10.0399C15.0308 9.48837 15.5017 9.06512 16.0532 9.09452C16.8361 9.13626 17.4669 9.18787 17.9712 9.24106C19.4556 9.39761 20.6397 10.4507 20.8175 12.0059C20.9188 12.8923 21 14.1715 21 16C21 17.8285 20.9188 19.1077 20.8175 19.9941C20.6398 21.5484 19.4585 22.602 17.9732 22.7588C16.7919 22.8834 14.9108 23 12 23C9.08922 23 7.20806 22.8834 6.02684 22.7588C4.54151 22.602 3.36021 21.5484 3.18253 19.9941C3.0812 19.1077 3 17.8285 3 16C3 14.1715 3.0812 12.8923 3.18253 12.0059C3.36031 10.4507 4.54436 9.39761 6.02877 9.24106C6.53306 9.18787 7.16393 9.13626 7.94676 9.09452C8.49827 9.06512 8.96918 9.48837 8.99858 10.0399Z" fill="#777E91"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 6.20711C8.81658 6.59763 8.18342 6.59763 7.79289 6.20711C7.40237 5.81658 7.40237 5.18342 7.79289 4.79289L11.2929 1.29289C11.6834 0.902369 12.3166 0.902369 12.7071 1.29289L16.2071 4.79289C16.5976 5.18342 16.5976 5.81658 16.2071 6.20711C15.8166 6.59763 15.1834 6.59763 14.7929 6.20711L13 4.41421V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V4.41421L9.20711 6.20711Z" fill="#777E91"/>
+                            </svg></button>
+                            <div class="item-first__block-box-like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#EF466F"/>
+                                </svg>
                             </div>
-                            <div class="uploadItem__tumblers-block-switcher">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="uploadItem__tumblers-block">
-                            <div class="uploadItem__tumblers-block-info">
-                                <p class="uploadItem__tumblers-block-text">Unlock once purchased</p>
-                                <p class="uploadItem__tumblers-block-desc">Content will be unlocked after successful transaction</p>
-                            </div>
-                            <div class="uploadItem__tumblers-block-switcher">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="uploadItem__tumblers-block">
-                            <div class="uploadItem__tumblers-block-info">
-                                <p class="uploadItem__tumblers-block-text">Choose collection</p>
-                                <p class="uploadItem__tumblers-block-desc">Choose an exiting collection or create a new one</p>
-                            </div>
-                        </div>
-                        <div class="uploadItem__tumblers-conts">
-                            <div class="uploadItem__tumblers-cont">
-                                <div class="uploadItem__tumblers-cont-upload">
-                                    <span class="uploadItem__tumblers-cont-logo"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7 1C7 0.447715 6.55228 0 6 0C5.44772 0 5 0.447715 5 1V5H1C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7H5V11C5 11.5523 5.44772 12 6 12C6.55228 12 7 11.5523 7 11V7H11C11.5523 7 12 6.55228 12 6C12 5.44772 11.5523 5 11 5H7V1Z" fill="#777E91"/>
-</svg>
-
-</span>
-                                </div>
-                                <p class="uploadItem__tumblers-cont-text">Create collection</p>
-                            </div>
-                            <div class="uploadItem__tumblers-cont">
-                                <div class="uploadItem__tumblers-cont-upload uploadItem__tumblers-cont-upload-second"></div>
-                                <p class="uploadItem__tumblers-cont-text">Crypto Legend - Professor</p>
-                            </div>
-                            <div class="uploadItem__tumblers-cont">
-                                <div class="uploadItem__tumblers-cont-upload uploadItem__tumblers-cont-upload-third"></div>
-                                <p class="uploadItem__tumblers-cont-text">Crypto Legend - Professor</p>
-                            </div>
-                            <div class="uploadItem__tumblers-cont">
-                                <div class="uploadItem__tumblers-cont-upload uploadItem__tumblers-cont-upload-last"></div>
-                                <p class="uploadItem__tumblers-cont-text">Legend Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uploadItem__foot">
-                        <a href="" class="uploadItem__foot-link">
-                            Create item
-                            <span class="uploadItem__foot-link-icon"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.39461 0.843309C6.66516 0.593571 7.08693 0.61044 7.33667 0.880985L9.49052 3.21429C9.72625 3.46967 9.72625 3.86329 9.49052 4.11867L7.33667 6.45203C7.08694 6.72257 6.66517 6.73945 6.39462 6.48971C6.12407 6.23998 6.1072 5.81821 6.35693 5.54766L7.478 4.33315L1.00065 4.33315C0.632461 4.33315 0.333984 4.03467 0.333984 3.66648C0.333984 3.29829 0.632461 2.99982 1.00065 2.99982L7.47798 2.99982L6.35694 1.78536C6.1072 1.51482 6.12407 1.09305 6.39461 0.843309Z" fill="#FCFCFD"/>
-</svg>
-</span>
-                        </a>
-                        <div class="uploadItem__foot-right">
-                            <p class="uploadItem__foot-text">Auto saving</p>
-                            <span class="uploadItem__foot-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.99967 0.333496C6.63148 0.333496 6.33301 0.631973 6.33301 1.00016V3.00016C6.33301 3.36835 6.63148 3.66683 6.99967 3.66683C7.36786 3.66683 7.66634 3.36835 7.66634 3.00016V1.00016C7.66634 0.631973 7.36786 0.333496 6.99967 0.333496Z" fill="#FCFCFD"/>
-<path d="M6.99967 10.3335C6.63148 10.3335 6.33301 10.632 6.33301 11.0002V13.0002C6.33301 13.3684 6.63148 13.6668 6.99967 13.6668C7.36786 13.6668 7.66634 13.3684 7.66634 13.0002V11.0002C7.66634 10.632 7.36786 10.3335 6.99967 10.3335Z" fill="#FCFCFD"/>
-<path d="M12.9997 6.3335C13.3679 6.3335 13.6663 6.63197 13.6663 7.00016C13.6663 7.36835 13.3679 7.66683 12.9997 7.66683H10.9997C10.6315 7.66683 10.333 7.36835 10.333 7.00016C10.333 6.63197 10.6315 6.3335 10.9997 6.3335H12.9997Z" fill="#FCFCFD"/>
-<path d="M3.66634 7.00016C3.66634 6.63197 3.36786 6.3335 2.99967 6.3335H0.999674C0.631485 6.3335 0.333008 6.63197 0.333008 7.00016C0.333008 7.36835 0.631485 7.66683 0.999674 7.66683H2.99967C3.36786 7.66683 3.66634 7.36835 3.66634 7.00016Z" fill="#FCFCFD"/>
-<path d="M10.7709 2.28618C11.0313 2.02583 11.4534 2.02583 11.7138 2.28618C11.9741 2.54653 11.9741 2.96864 11.7138 3.22899L10.2995 4.64321C10.0392 4.90356 9.61708 4.90356 9.35673 4.64321C9.09638 4.38286 9.09638 3.96075 9.35673 3.7004L10.7709 2.28618Z" fill="#FCFCFD"/>
-<path d="M4.64263 9.35715C4.38228 9.0968 3.96017 9.0968 3.69982 9.35715L2.28561 10.7714C2.02526 11.0317 2.02526 11.4538 2.28561 11.7142C2.54596 11.9745 2.96807 11.9745 3.22842 11.7142L4.64263 10.3C4.90298 10.0396 4.90298 9.6175 4.64263 9.35715Z" fill="#FCFCFD"/>
-<path d="M11.7137 10.7714C11.9741 11.0318 11.9741 11.4539 11.7137 11.7142C11.4534 11.9746 11.0313 11.9746 10.7709 11.7142L9.35671 10.3C9.09636 10.0397 9.09636 9.61757 9.35671 9.35722C9.61706 9.09687 10.0392 9.09687 10.2995 9.35722L11.7137 10.7714Z" fill="#FCFCFD"/>
-<path d="M4.64269 4.64312C4.90304 4.38277 4.90304 3.96066 4.64269 3.70031L3.22848 2.28609C2.96813 2.02574 2.54602 2.02574 2.28567 2.28609C2.02532 2.54644 2.02532 2.96855 2.28567 3.2289L3.69988 4.64312C3.96023 4.90347 4.38234 4.90347 4.64269 4.64312Z" fill="#FCFCFD"/>
-</svg>
-</span>
+                            <button class="item-first__block-box-like item-first__block-box-like-btn"><svg width="18" height="4" viewBox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0ZM16 0C14.9 0 14 0.9 14 2C14 3.1 14.9 4 16 4C17.1 4 18 3.1 18 2C18 0.9 17.1 0 16 0ZM9 0C7.9 0 7 0.9 7 2C7 3.1 7.9 4 9 4C10.1 4 11 3.1 11 2C11 0.9 10.1 0 9 0Z" fill="#777E91"/>
+                            </svg></button>
                         </div>
                     </div>
                 </div>
-                <aside class="uploadItem__aside">
-                    <h2 class="uploadItem__aside-title">Preview</h2>
-                    <div class="bid__block-box uploadItem__box">
-                        <img src="../../src/images/bid/bid1.png" alt="Bid Image" class="bid__block-img">
-                        <div class="bid__block-box-content">
-                            <div class="bid__block-box-info">
-                                <p class="bid__block-subtitle">Amazing digital art</p>
-                                <img src="../../src/images/auction/clown.png" alt="user image"
-                                     class="bid__block-avatar">
-                                <img src="../../src/images/auction/clown.png" alt="user image"
-                                     class="bid__block-avatar">
-                                <img src="../../src/images/auction/clown.png" alt="user image"
-                                     class="bid__block-avatar">
-                            </div>
-                            <div class="bid__block-box-info">
-                                <p class="bid__block-price uploadItem__aside-price">2.45 ETH</p>
-                                <p class="bid__block-stock uploadItem__aside-stock">3 in stock</p>
+                <div class="item-first__block-box">
+                    <h2 class="item-first__block-box-title">The amazing art</h2>
+                    <div class="item-first__block-box-text">
+                        <p class="item-first__block-box-eth">2.5 ETH</p>
+                        <p class="item-first__block-box-price">$4,429.87</p>
+                        <p class="item-first__block-box-stock">10 in stock</p>
+                    </div>
+                    <p class="item-first__block-box-desc">This NFT Card will give you Access to Special Airdrops. To learn more about UI8 please visit <span class="item-first__block-box-link">https://ui8.net</span></p>
+                    <div class="item-first__block-box-btns">
+                        <button class="item-first__block-box-btn">Info</button>
+                        <button class="item-first__block-box-btn">Owners</button>
+                        <button class="item-first__block-box-btn">History</button>
+                        <button class="item-first__block-box-btn">Bids</button>
+                    </div>
+                    <div class="item-first__block-box-users">
+                        <div class="item-first__block-box-user">
+                            <img src="../images/item/user1.png" alt="User Image" class="item-first__block-box-user-img">
+                            <div class="item-first__block-box-user-info">
+                                <p class="item-first__block-box-user-owner">Owner</p>
+                                <p class="item-first__block-box-user-name">Raquel Will</p>
                             </div>
                         </div>
-                        <div class="bid__block-line uploadItem__aside-line"></div>
-                        <div class="bid__block-box-end-content">
-                            <div class="bid__block-box-end">
-                        <span class="bid__block-box-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                               xmlns="http://www.w3.org/2000/svg">
-<path d="M14.1667 0C14.6269 0 15 0.373096 15 0.833333V2.5C15 2.96024 14.6269 3.33333 14.1667 3.33333C13.7064 3.33333 13.3333 2.96024 13.3333 2.5V0.833333C13.3333 0.373096 13.7064 0 14.1667 0Z"
-      fill="#777E91"/>
-<path d="M14.1667 10C14.6269 10 15 10.3731 15 10.8333V15.8333C15 16.2936 14.6269 16.6667 14.1667 16.6667C13.7064 16.6667 13.3333 16.2936 13.3333 15.8333V10.8333C13.3333 10.3731 13.7064 10 14.1667 10Z"
-      fill="#777E91"/>
-<path d="M5.83333 3.33333C6.29357 3.33333 6.66667 3.70643 6.66667 4.16667V10.8333C6.66667 11.2936 6.29357 11.6667 5.83333 11.6667C5.3731 11.6667 5 11.2936 5 10.8333V4.16667C5 3.70643 5.3731 3.33333 5.83333 3.33333Z"
-      fill="#777E91"/>
-<path d="M5.83333 15C6.29357 15 6.66667 15.3731 6.66667 15.8333V19.1667C6.66667 19.6269 6.29357 20 5.83333 20C5.3731 20 5 19.6269 5 19.1667V15.8333C5 15.3731 5.3731 15 5.83333 15Z"
-      fill="#777E91"/>
-<path fill-rule="evenodd" clip-rule="evenodd"
-      d="M11.6673 4.1665C11.6673 2.78579 12.7866 1.6665 14.1673 1.6665C15.548 1.6665 16.6673 2.78579 16.6673 4.1665V9.1665C16.6673 10.5472 15.548 11.6665 14.1673 11.6665C12.7866 11.6665 11.6673 10.5472 11.6673 9.1665V4.1665ZM15.0007 4.1665V9.1665C15.0007 9.62674 14.6276 9.99984 14.1673 9.99984C13.7071 9.99984 13.334 9.62674 13.334 9.1665V4.1665C13.334 3.70627 13.7071 3.33317 14.1673 3.33317C14.6276 3.33317 15.0007 3.70627 15.0007 4.1665Z"
-      fill="#777E91"/>
-<path fill-rule="evenodd" clip-rule="evenodd"
-      d="M3.33398 12.4998C3.33398 11.1191 4.45327 9.99984 5.83398 9.99984C7.2147 9.99984 8.33398 11.1191 8.33398 12.4998V14.1665C8.33398 15.5472 7.2147 16.6665 5.83398 16.6665C4.45327 16.6665 3.33398 15.5472 3.33398 14.1665V12.4998ZM6.66732 12.4998V14.1665C6.66732 14.6267 6.29422 14.9998 5.83398 14.9998C5.37375 14.9998 5.00065 14.6267 5.00065 14.1665V12.4998C5.00065 12.0396 5.37375 11.6665 5.83398 11.6665C6.29422 11.6665 6.66732 12.0396 6.66732 12.4998Z"
-      fill="#777E91"/>
-</svg>
-</span>
-                                <p class="bid__block-highest">Highest bid</p>
-                                <p class="bid__block-eth">0.001 ETH</p>
-                            </div>
-                            <div class="bid__block-box-end">
-                                <p class="bid__block-newBid uploadItem__newBid">New bid 🔥</p>
+                        <div class="item-first__block-box-user">
+                            <img src="../images/item/user2.png" alt="User Image" class="item-first__block-box-user-img item-first__block-box-user-img-second">
+                            <div class="item-first__block-box-user-info">
+                                <p class="item-first__block-box-user-owner">Creator</p>
+                                <p class="item-first__block-box-user-name">Selina Mayert</p>
                             </div>
                         </div>
                     </div>
-                    <button class="uploadItem__aside-remove"><span class="uploadItem__aside-icon"><svg width="24"
-                                                                                                       height="24"
-                                                                                                       viewBox="0 0 24 24"
-                                                                                                       fill="none"
-                                                                                                       xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd"
-      d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-      fill="#777E91"/>
-<path fill-rule="evenodd" clip-rule="evenodd"
-      d="M8.29289 8.29289C8.68342 7.90237 9.31658 7.90237 9.70711 8.29289L12 10.5858L14.2929 8.29289C14.6834 7.90237 15.3166 7.90237 15.7071 8.29289C16.0976 8.68342 16.0976 9.31658 15.7071 9.70711L13.4142 12L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L12 13.4142L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L10.5858 12L8.29289 9.70711C7.90237 9.31658 7.90237 8.68342 8.29289 8.29289Z"
-      fill="#777E91"/>
-</svg>
-</span> Clear all
-                    </button>
-                </aside>
+                    <div class="item-first__block-box-cont">
+                        <div class="item-first__block-box-cont-box">
+                            <img src="../images/item/user2.png" alt="User Image" class="item-first__block-box-cont-ava">
+                            <div class="item-first__block-box-cont-info">
+                                <div class="item-first__block-box-cont-descs">
+                                    <p class="item-first__block-box-cont-by">Highest bid by</p>
+                                    <p class="item-first__block-box-cont-name">Kohaku Tora</p>
+                                </div>
+                                <div class="item-first__block-box-cont-descs">
+                                    <p class="item-first__block-box-cont-eth">1.46 ETH</p>
+                                    <p class="item-first__block-box-cont-price">$2,764.89</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-first__block-box-cont-btns">
+                            <button class="item-first__block-box-cont-btn">Purchase now</button>
+                            <button class="item-first__block-box-cont-btn">Place a bid</button>
+                        </div>
+                        <div class="item-first__block-box-cont-prices">
+                            <p class="item-first__block-box-cont-fee">Service fee</p>
+                            <p class="item-first__block-box-cont-percent">1.5%</p>
+                            <p class="item-first__block-box-cont-value">2.563 ETH</p>
+                            <p class="item-first__block-box-cont-value">$4,540.62</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 <footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="footer__top-logo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__top-logo">
                 <span class="footer__icon"><svg width="180" height="81" viewBox="0 0 180 81" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -295,56 +155,57 @@
 </defs>
 </svg>
 </span>
-                <h2 class="footer__title">crypter</h2>
-                <h3 class="footer__subtitle">The New Creative Economy.</h3>
-            </div>
-            <div class="footer__top-nav">
-                <div class="footer__top-nav-block">
-                    <h2 class="footer__top-nav-title">Stacks</h2>
-                    <div class="footer__top-nav-links">
-                        <a href="" class="footer__top-nav-link">Discover</a>
-                        <a href="" class="footer__top-nav-link">Connect wallet</a>
-                        <a href="" class="footer__top-nav-link">Create item</a>
-                    </div>
-                </div>
-                <div class="footer__top-nav-block">
-                    <h2 class="footer__top-nav-title">Info</h2>
-                    <div class="footer__top-nav-links">
-                        <a href="" class="footer__top-nav-link">Download</a>
-                        <a href="" class="footer__top-nav-link">Demos</a>
-                        <a href="" class="footer__top-nav-link">Support</a>
-                    </div>
-                </div>
-                <div class="footer__top-nav-block">
-                    <h2 class="footer__top-nav-title">Join Newsletter</h2>
-                    <p class="footer__top-nav-subtitle">Subscribe our newsletter to get more free design course and
-                        resource</p>
-                    <form class="footer__top-nav-form">
-                        <label class="footer__top-nav-form-label">
-                            <input type="email" placeholder="Enter your email" class="footer__top-nav-input">
-                            <button type="submit" class="footer__top-nav-btn"><span class="footer__top-nav-arrow"><svg
-                                    width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="footer__title">crypter</h2>
+        <h3 class="footer__subtitle">The New Creative Economy.</h3>
+      </div>
+      <div class="footer__top-nav">
+        <div class="footer__top-nav-block">
+          <h2 class="footer__top-nav-title">Stacks</h2>
+          <div class="footer__top-nav-links">
+            <a href="" class="footer__top-nav-link">Discover</a>
+            <a href="" class="footer__top-nav-link">Connect wallet</a>
+            <a href="" class="footer__top-nav-link">Create item</a>
+          </div>
+        </div>
+        <div class="footer__top-nav-block">
+          <h2 class="footer__top-nav-title">Info</h2>
+          <div class="footer__top-nav-links">
+            <a href="" class="footer__top-nav-link">Download</a>
+            <a href="" class="footer__top-nav-link">Demos</a>
+            <a href="" class="footer__top-nav-link">Support</a>
+          </div>
+        </div>
+        <div class="footer__top-nav-block">
+          <h2 class="footer__top-nav-title">Join Newsletter</h2>
+          <p class="footer__top-nav-subtitle">Subscribe our newsletter to get more free design course and
+            resource</p>
+          <form class="footer__top-nav-form">
+            <label class="footer__top-nav-form-label">
+              <input type="email" placeholder="Enter your email" class="footer__top-nav-input">
+              <button type="submit" class="footer__top-nav-btn"><span class="footer__top-nav-arrow"><svg
+                      width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd"
       d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z"
       fill="#FCFCFD"/>
 </svg>
 </span></button>
-                        </label>
-                    </form>
-                </div>
-            </div>
+            </label>
+          </form>
         </div>
-        <div class="footer__line"></div>
-        <div class="footer__bot">
-            <p class="footer__bot-copyright">Copyright © 2021 UI8 LLC. All rights reserved</p>
-            <form action="" class="footer__bot-form">
-                <label class="footer__bot-label">
-                    We use cookies for better service.
-                    <button class="footer__bot-btn">Accept</button>
-                </label>
-            </form>
-        </div>
+      </div>
     </div>
+    <div class="footer__line"></div>
+    <div class="footer__bot">
+      <p class="footer__bot-copyright">Copyright © 2021 UI8 LLC. All rights reserved</p>
+      <form action="" class="footer__bot-form">
+        <label class="footer__bot-label">
+          We use cookies for better service.
+          <button class="footer__bot-btn">Accept</button>
+        </label>
+      </form>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>
