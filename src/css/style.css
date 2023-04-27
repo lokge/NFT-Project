@@ -2501,7 +2501,6 @@ input:checked + .slider:before {
   .questions__home-block-links {
     gap: 20px;
   }
-
   .questions__home-block-link {
     gap: 5px;
   }
